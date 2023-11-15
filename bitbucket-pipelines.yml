@@ -1,0 +1,12 @@
+image: node:14.16.1
+
+pipelines:
+  pull-requests:
+    '**':
+    - parallel:
+      - step:
+          name: 'Build and Test'
+          script:
+            - echo "Install and build running..."
+            - npm install
+            - npm run prod:build

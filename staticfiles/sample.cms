@@ -1,0 +1,3 @@
+<style>.abc{color:red}</style>
+<div class="abc">abc</div>
+<script type="text/javascript">document.querySelector('.abc').onclick = function(e){alert(1)}</script>
